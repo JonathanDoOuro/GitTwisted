@@ -1,0 +1,110 @@
+2022-08-16T13:30:24-0300 [-] Loading chatserver.py...
+2022-08-16T13:30:24-0300 [-] Loaded.
+2022-08-16T13:30:24-0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 22.4.0 (/usr/bin/python3 3.8.10) starting up.
+2022-08-16T13:30:24-0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2022-08-16T13:30:24-0300 [-] ServerFactory starting on 1025
+2022-08-16T13:30:24-0300 [twisted.internet.protocol.ServerFactory#info] Starting factory <twisted.internet.protocol.ServerFactory object at 0x7f0688c5c220>
+2022-08-16T13:34:03-0300 [stdout#info] Got new client!
+2022-08-16T13:34:45-0300 [stdout#info] received b'jonathan'
+2022-08-16T13:34:53-0300 [stdout#info] received b'jonathan msg'
+2022-08-16T13:37:28-0300 [stdout#info] received b'k'
+2022-08-16T13:37:30-0300 [stdout#info] received b'k'
+2022-08-16T13:37:30-0300 [stdout#info] received b'kk'
+2022-08-16T13:38:06-0300 [stdout#info] received b'\xff\xf4\xff\xfd\x06'
+2022-08-16T13:38:08-0300 [stdout#info] received b'\xff\xfb\x06^'
+2022-08-16T13:38:34-0300 [stdout#info] received b"'^]'"
+2022-08-16T13:38:39-0300 [stdout#info] received b'\x1b[A'
+2022-08-16T13:38:43-0300 [stdout#info] Lost a client!
+2022-08-17T10:57:06-0300 [-] Loading finger11.tac...
+2022-08-17T10:57:06-0300 [-] Loaded.
+2022-08-17T10:57:06-0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 22.4.0 (/usr/bin/python3 3.8.10) starting up.
+2022-08-17T10:57:06-0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2022-08-17T10:57:07-0300 [stderr#error] Traceback (most recent call last):
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/internet/tcp.py", line 1334, in startListening
+2022-08-17T10:57:07-0300 [stderr#error]     skt.bind(addr)
+2022-08-17T10:57:07-0300 [stderr#error] PermissionError: [Errno 13] Permission denied
+2022-08-17T10:57:07-0300 [stderr#error] During handling of the above exception, another exception occurred:
+2022-08-17T10:57:07-0300 [stderr#error] Traceback (most recent call last):
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/bin/twistd", line 8, in <module>
+2022-08-17T10:57:07-0300 [stderr#error]     sys.exit(run())
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/twistd.py", line 35, in run
+2022-08-17T10:57:07-0300 [stderr#error]     app.run(runApp, ServerOptions)
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/app.py", line 674, in run
+2022-08-17T10:57:07-0300 [stderr#error]     runApp(config)
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/twistd.py", line 29, in runApp
+2022-08-17T10:57:07-0300 [stderr#error]     runner.run()
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/app.py", line 374, in run
+2022-08-17T10:57:07-0300 [stderr#error]     self.postApplication()
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/_twistd_unix.py", line 254, in postApplication
+2022-08-17T10:57:07-0300 [stderr#error]     self.startApplication(self.application)
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/_twistd_unix.py", line 444, in startApplication
+2022-08-17T10:57:07-0300 [stderr#error]     service.IService(application).privilegedStartService()
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/service.py", line 271, in privilegedStartService
+2022-08-17T10:57:07-0300 [stderr#error]     service.privilegedStartService()
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/internet.py", line 397, in privilegedStartService
+2022-08-17T10:57:07-0300 [stderr#error]     raisedNow[0].raiseException()
+2022-08-17T10:57:07-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/python/failure.py", line 500, in raiseException
+2022-08-17T10:57:07-0300 [stderr#error]     raise self.value.with_traceback(self.tb)
+2022-08-17T10:57:07-0300 [stderr#error] twisted.internet.error.CannotListenError: Couldn't listen on any:79: [Errno 13] Permission denied.
+2022-08-17T10:58:48-0300 [-] Loading finger11.tac...
+2022-08-17T10:58:48-0300 [-] Loaded.
+2022-08-17T10:58:48-0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 22.4.0 (/usr/bin/python3 3.8.10) starting up.
+2022-08-17T10:58:48-0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2022-08-17T10:58:48-0300 [stderr#error] Traceback (most recent call last):
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/internet/tcp.py", line 1334, in startListening
+2022-08-17T10:58:48-0300 [stderr#error]     skt.bind(addr)
+2022-08-17T10:58:48-0300 [stderr#error] PermissionError: [Errno 13] Permission denied
+2022-08-17T10:58:48-0300 [stderr#error] During handling of the above exception, another exception occurred:
+2022-08-17T10:58:48-0300 [stderr#error] Traceback (most recent call last):
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/bin/twistd", line 8, in <module>
+2022-08-17T10:58:48-0300 [stderr#error]     sys.exit(run())
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/twistd.py", line 35, in run
+2022-08-17T10:58:48-0300 [stderr#error]     app.run(runApp, ServerOptions)
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/app.py", line 674, in run
+2022-08-17T10:58:48-0300 [stderr#error]     runApp(config)
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/twistd.py", line 29, in runApp
+2022-08-17T10:58:48-0300 [stderr#error]     runner.run()
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/app.py", line 374, in run
+2022-08-17T10:58:48-0300 [stderr#error]     self.postApplication()
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/_twistd_unix.py", line 254, in postApplication
+2022-08-17T10:58:48-0300 [stderr#error]     self.startApplication(self.application)
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/_twistd_unix.py", line 444, in startApplication
+2022-08-17T10:58:48-0300 [stderr#error]     service.IService(application).privilegedStartService()
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/service.py", line 271, in privilegedStartService
+2022-08-17T10:58:48-0300 [stderr#error]     service.privilegedStartService()
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/internet.py", line 397, in privilegedStartService
+2022-08-17T10:58:48-0300 [stderr#error]     raisedNow[0].raiseException()
+2022-08-17T10:58:48-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/python/failure.py", line 500, in raiseException
+2022-08-17T10:58:48-0300 [stderr#error]     raise self.value.with_traceback(self.tb)
+2022-08-17T10:58:48-0300 [stderr#error] twisted.internet.error.CannotListenError: Couldn't listen on any:79: [Errno 13] Permission denied.
+2022-08-17T10:59:01-0300 [-] Loading finger11.tac...
+2022-08-17T10:59:01-0300 [-] Loaded.
+2022-08-17T10:59:01-0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 22.4.0 (/usr/bin/python3 3.8.10) starting up.
+2022-08-17T10:59:01-0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2022-08-17T10:59:02-0300 [stderr#error] Traceback (most recent call last):
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/internet/tcp.py", line 1334, in startListening
+2022-08-17T10:59:02-0300 [stderr#error]     skt.bind(addr)
+2022-08-17T10:59:02-0300 [stderr#error] PermissionError: [Errno 13] Permission denied
+2022-08-17T10:59:02-0300 [stderr#error] During handling of the above exception, another exception occurred:
+2022-08-17T10:59:02-0300 [stderr#error] Traceback (most recent call last):
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/bin/twistd", line 8, in <module>
+2022-08-17T10:59:02-0300 [stderr#error]     sys.exit(run())
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/twistd.py", line 35, in run
+2022-08-17T10:59:02-0300 [stderr#error]     app.run(runApp, ServerOptions)
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/app.py", line 674, in run
+2022-08-17T10:59:02-0300 [stderr#error]     runApp(config)
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/twistd.py", line 29, in runApp
+2022-08-17T10:59:02-0300 [stderr#error]     runner.run()
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/app.py", line 374, in run
+2022-08-17T10:59:02-0300 [stderr#error]     self.postApplication()
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/_twistd_unix.py", line 254, in postApplication
+2022-08-17T10:59:02-0300 [stderr#error]     self.startApplication(self.application)
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/scripts/_twistd_unix.py", line 444, in startApplication
+2022-08-17T10:59:02-0300 [stderr#error]     service.IService(application).privilegedStartService()
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/service.py", line 271, in privilegedStartService
+2022-08-17T10:59:02-0300 [stderr#error]     service.privilegedStartService()
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/application/internet.py", line 397, in privilegedStartService
+2022-08-17T10:59:02-0300 [stderr#error]     raisedNow[0].raiseException()
+2022-08-17T10:59:02-0300 [stderr#error]   File "/home/jonathan/.local/lib/python3.8/site-packages/twisted/python/failure.py", line 500, in raiseException
+2022-08-17T10:59:02-0300 [stderr#error]     raise self.value.with_traceback(self.tb)
+2022-08-17T10:59:02-0300 [stderr#error] twisted.internet.error.CannotListenError: Couldn't listen on any:79: [Errno 13] Permission denied.
